@@ -1,2 +1,2 @@
 # REGRESUMEextract
-A resume skills and info extractor
+A simple resume skills and info extractor
