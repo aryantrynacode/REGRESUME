@@ -1,2 +1,2 @@
 # REGRESUMEextract
-A financial advisor AI Chatbot
+A resume skills and info extractor
