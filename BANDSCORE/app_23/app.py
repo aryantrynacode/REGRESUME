@@ -4,12 +4,17 @@ import json
 import os
 
 # 🔽 Safe load for skill list
-def load_skills(file_path='skills.txt'):
-    if not os.path.exists(file_path):
-        st.error(f"⚠️ File '{file_path}' not found. Please make sure it's in the same folder as app.py.")
+def load_skills():
+    # Get the absolute path to the directory where app.py is located
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    skills_path = os.path.join(base_path, 'skills.txt')
+
+    if not os.path.exists(skills_path):
+        st.error(f"⚠️ File '{skills_path}' not found. Please make sure it's in the same folder as app.py.")
         return []
-    with open(file_path, 'r') as f:
-        return [line.strip().lower() for line in f.readlines()]
+    
+    with open(skills_path, 'r') as f:
+        return [line.strip().lower() for line in f if line.strip()]
 
 # 🔽 Extract text from PDF
 def extract_text_from_pdf(pdf_file):
