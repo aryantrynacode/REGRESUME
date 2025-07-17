@@ -1,10 +1,90 @@
 python
 sql
-machinelearning
-nlp
 excel
+machine learning
+deep learning
+data analysis
 pandas
-power bi
-streamlit
+numpy
 tensorflow
-dataanalysis
+streamlit
+power bi
+tableau
+statistics
+nlp
+flask
+django
+git
+github
+html
+css
+javascript
+react
+angular
+vue
+node.js
+express
+tailwindcss
+figma
+adobe xd
+illustrator
+photoshop
+ui design
+ux design
+web development
+mobile development
+android
+ios
+java
+kotlin
+swift
+c
+c++
+c#
+unity
+unreal engine
+blender
+autocad
+matlab
+r
+sas
+shell scripting
+bash
+linux
+aws
+azure
+gcp
+docker
+kubernetes
+jenkins
+terraform
+devops
+networking
+cybersecurity
+penetration testing
+ethical hacking
+blockchain
+solidity
+finance
+accounting
+marketing
+seo
+sem
+copywriting
+content writing
+project management
+scrum
+agile
+jira
+notion
+excel
+sap
+hr analytics
+biostatistics
+chemistry
+biology
+molecular biology
+bioinformatics
+public speaking
+communication skills
+team management
