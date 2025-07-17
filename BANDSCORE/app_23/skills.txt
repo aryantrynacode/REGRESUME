@@ -1,0 +1,10 @@
+python
+sql
+machinelearning
+nlp
+excel
+pandas
+power bi
+streamlit
+tensorflow
+dataanalysis
