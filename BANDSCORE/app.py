@@ -7,12 +7,17 @@ st.set_page_config(page_title="Resume Skill Extractor")
 st.title("📄 Resume Skill Extractor")
 
 # Load skill list safely
-if os.path.exists("skills.txt"):
-    with open("skills.txt") as f:
-        skill_list = [line.strip().lower() for line in f.readlines()]
-else:
-    st.error("❌ 'skills.txt' file not found. Please make sure it is in the same folder as app.py.")
-    skill_list = []
+import os
+
+# Get path relative to the current script location
+SKILLS_FILE = os.path.join(os.path.dirname(__file__), "skills.txt")
+
+try:
+    with open(SKILLS_FILE, "r") as f:
+        skills_list = [line.strip().lower() for line in f if line.strip()]
+except FileNotFoundError:
+    st.error("'skills.txt' file not found. Please make sure it is in the same folder as app.py.")
+    skills_list = []
 
 
 def extract_text_from_pdf(uploaded_file):
